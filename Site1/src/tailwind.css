@@ -1,0 +1,101 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+@theme{
+  --color-primaria: #00B050;
+  --color-secundaria: #111111;
+  --font-family-primaria: 'inter', sans-serif;
+  --font-family-secundaria: 'Italiana', serif;
+  --color-fundo-primario: #062815;
+  --color-fundo-secundario: #0D0D0D;
+}
+
+.button-primaria {
+  border: solid 0.5px var(--color-primaria);
+  border-radius: 5px;
+  background-color: var(--color-secundaria);
+  color: var(--color-primaria);
+  cursor: pointer;
+  width: 135px;
+  height: 32px;
+  font-size: 12px;
+  padding: 10px 25px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button-primaria:hover {
+  background-color: var(--color-primaria);
+  color: var(--color-secundaria);
+}
+
+.button-secundario {
+  border-radius: 5px;
+  background-color: var(--color-primaria);
+  color: var(--color-secundaria);
+  cursor: pointer;
+  width: 135px;
+  height: 32px;
+  font-size: 12px;
+  padding: 10px 25px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button-secundario:hover {
+  background-color: var(--color-secundaria);
+  border: solid 0.5px var(--color-primaria);
+  color: var(--color-primaria);
+}
+
+.bg-header{
+  background-color: var(--color-secundaria);
+  opacity: 5%;
+}
+
+.border-verde{
+  border: solid 0.5px var(--color-primaria);
+  border-radius: 30px;
+}
+
+.shadow-primaria {
+  box-shadow: 0 4px 10px rgba(0, 176, 80, 0.4), 0 8px 20px rgba(0, 176, 80, 0.2);
+}
+
+.text-shadow {
+ text-shadow: 
+    0 0 2px rgba(255,255,255,0.8),
+    0 0 5px rgba(255,255,255,0.6),
+    0 0 10px rgba(255,255,255,0.4),
+    0 0 25px rgba(255,255,255,0.3);
+}
+
+/* A barra inteira */
+::-webkit-scrollbar {
+  width: 12px; /* Largura da barra */
+}
+
+/* Parte onde a barra desliza */
+::-webkit-scrollbar-track {
+  background: black; /* Cor do fundo */
+  border-radius: 6px;
+}
+
+/* A própria barra que você arrasta */
+::-webkit-scrollbar-thumb {
+  background-color: #00B050; /* Cor da barra */
+  border-radius: 6px;
+  border: 3px solid #000000; /* Espaço entre thumb e track */
+}
+
+/* Ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #009930;
+}
+
+
+.transition-appear {
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.translate-y-10 {
+  transform: translateY(2.5rem); /* Tailwind translate-y-10 */
+}
